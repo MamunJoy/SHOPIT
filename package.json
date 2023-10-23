@@ -1,0 +1,21 @@
+{
+  "name": "shopit",
+  "version": "1.0.0",
+  "description": "full ecommerce site useing mern",
+  "main": "server.js",
+  "scripts": {
+    "start" : "node backend/server.js",
+    "dev" : "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod" : "SET NODE_ENV= PRODUCTION& nodemon backend/server"
+  },
+  "author": "Mamun Joy",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
