@@ -40,7 +40,7 @@ const productSchema = new mongoose.Schema({
             values: [
                 'Electronics',
                 'Fashtion',
-                'Leptop',
+                'Leptops',
                 'Accessories',
                 'Headphones',
                 'Smartphones',
