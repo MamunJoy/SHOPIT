@@ -21,3 +21,16 @@ exports.isAuthenticatedUser = catchAsyncErrors(async (req, res, next) => {
     next()
 
 })
+
+// Handling users roles
+exports.authorizeRoles = (...roles)=>{
+     return (req,res,next)=> {
+         if (!roles.includes(req.user.role)){
+            return next(new ErrorHandler(` Role (${req.user.role}) is not allowed this resource`, 403))
+         }
+         next()
+     } 
+}
+
+
+// Checks whether a user has created any recipe or not
